@@ -8,7 +8,7 @@ This repository accompanies the paper **Digitalization and Entrepreneurial Engag
 
 The study examines whether access to digital technologies is associated with entrepreneurial engagement in Pakistan's non-agricultural sector. It focuses on three forms of digital access — mobile phones, personal computers, and internet connectivity — and examines how their relationships with entrepreneurship vary across gender and rural/urban settings.
 
-The repository is intended as a research companion to the published paper. It documents the study design, data source, econometric approach, key findings, and limitations. It does not claim to contain the original restricted or externally sourced survey microdata.
+The repository is intended as a research companion to the published paper. It documents the study design, data source, econometric approach, key findings, and limitations. It does not claim to contain the original survey microdata or the original statistical analysis code.
 
 ## Research question
 
@@ -39,6 +39,8 @@ Five model specifications are discussed in the paper, including separate models 
 
 The logistic formulation allows the results to be interpreted using odds ratios, making it possible to compare how different forms of digital access are associated with entrepreneurial engagement while accounting for relevant individual and regional characteristics.
 
+Detailed methodology: [Econometric Methodology](methodology/logistic-regression.md) | [Model Specification](methodology/model-specification.md)
+
 ## Main findings
 
 The analysis identifies different relationships for different forms of digital access.
@@ -65,13 +67,23 @@ These results are associations from cross-sectional survey data and should not b
 
 A major part of the study is its heterogeneity analysis. The results indicate that digital access does not translate into entrepreneurial opportunity equally across all groups.
 
-The paper finds stronger benefits from mobile and internet access for rural residents and men, while women remain less likely to participate in entrepreneurship. The findings are discussed in the context of differences in digital skills, access to markets and finance, mobility, safety, infrastructure, and other structural barriers.
+The paper reports positive associations for mobile access across all reported subgroups. Internet access is positive in the overall, rural, urban and male models but has a reported odds ratio below 1 in the female subgroup. These differences are discussed in the context of digital skills, access to markets and finance, mobility, safety, infrastructure, and other structural barriers.
 
 ## Interpretation
 
 Taken together, the findings suggest that **mobile connectivity is particularly important for entrepreneurial engagement in a resource-constrained environment**, while internet connectivity provides a more modest positive association. Computer access behaves differently and is negatively associated with entrepreneurship in the reported models.
 
 The study therefore argues for digital-inclusion policies that reflect how different technologies are actually used, rather than assuming that expanding access to every type of device will produce the same economic outcome.
+
+## Documentation
+
+- [Research summary](docs/research-summary.md)
+- [Dataset documentation](data/README.md)
+- [Econometric methodology](methodology/logistic-regression.md)
+- [Model specification](methodology/model-specification.md)
+- [Main results](results/main-results.md)
+- [Results interpretation](results/interpretation.md)
+- [Study limitations](docs/limitations.md)
 
 ## Limitations
 
@@ -83,24 +95,9 @@ The study has several important limitations that should be kept in mind when int
 - the study focuses on non-agricultural economic activity
 - digital access does not necessarily measure digital skills or the quality and intensity of technology use
 
-These limitations are discussed in the published paper and are important when considering how the findings may generalise to other settings.
+## Repository scope
 
-## Repository structure
-
-The repository is organised around the research workflow:
-
-```text
-.
-├── assets/       # Supporting repository material
-├── data/         # Data documentation; original survey microdata are not included
-├── docs/         # Research documentation
-├── figures/      # Figures and visual outputs
-├── methodology/  # Methodology documentation
-├── results/      # Results documentation
-└── src/          # Source-analysis documentation
-```
-
-The folders are intentionally documented without adding fabricated code or datasets. The public repository should reflect what is actually available rather than suggesting that the original survey analysis can be reproduced without the source data and analysis environment.
+This is a **research companion repository**, not a reproduction package. The public repository documents the published study without adding fabricated code, survey microdata, or unverified numerical results. The published paper remains the primary source for the complete statistical tables, variable definitions, literature review, regression specifications, subgroup analyses, references, and discussion.
 
 ## Publication
 
@@ -118,4 +115,4 @@ F. Umar, I. M. Asif, and M. T. Farid,
 
 ## Repository note
 
-This repository is maintained as a research companion to the publication. The published paper remains the primary source for the complete statistical tables, variable definitions, literature review, regression specifications, subgroup analyses, references, and discussion.
+This repository is maintained as a research companion to the publication. The published paper remains the authoritative source for the complete statistical tables, variable definitions, literature review, regression specifications, subgroup analyses, references, and discussion.
